@@ -1,0 +1,31 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+:root {
+  :root {
+    --byzantium: #70355d;
+    --violet-jtc: #642e58;
+    --murrey: #822851;
+    --amaranth-purple: #a0214a;
+    --crimson: #dc143d;
+    --claret: #941945;
+    --tyrian-purple: #701c49;
+    --violet-jtc-2: #4b1e4d;
+    --russian-violet: #3e1647;
+    --ultra-violet: #4C4382;
+  }
+}
+
+body {
+  background: radial-gradient(
+      rgba(0, 0, 0, 0.267) 0%,
+      #4c438296 100%
+    ),
+    url(../src/assets/bg.jpg), center/cover no-repeat;
+  overflow: hidden;
+}
+
+

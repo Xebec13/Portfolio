@@ -1,0 +1,13 @@
+a {
+  color: unset;
+  text-decoration: none;
+  text-wrap: nowrap;
+}
+
+ul {
+  list-style: none;
+}
+
+img {
+  display: block;
+}
