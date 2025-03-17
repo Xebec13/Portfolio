@@ -1,0 +1,42 @@
+.nav-bar {
+  position: relative;
+  background-color: #02022691;
+  overflow: hidden;
+  transition: width 0.7s ease, all 1s ease;
+  height: 100%;
+  border-radius: 15px;
+  color: #fff;
+}
+
+.nav-items {
+  padding: 2rem;
+}
+
+.nav-bar.inactive {
+  width: 5vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.nav-bar.active {
+  width: 25vw;
+}
+
+ul.nav-items li {
+  font-size: 7rem;
+}
+
+ul.nav-items li.nav-back {
+  font-size: 2.5rem;
+}
+
+ul.nav-button li {
+  font-size: 2.5rem;
+}
+
+.nav-back {
+  display: flex;
+  justify-content: center;
+}
+

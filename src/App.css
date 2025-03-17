@@ -2,6 +2,7 @@
   box-sizing: border-box;
   margin: 0;
   padding: 0;
+  font-family: var(--chewy-font);
 }
 
 :root {
@@ -15,17 +16,23 @@
     --tyrian-purple: #701c49;
     --violet-jtc-2: #4b1e4d;
     --russian-violet: #3e1647;
-    --ultra-violet: #4C4382;
+    --ultra-violet: #4c4382;
   }
 }
 
 body {
-  background: radial-gradient(
-      rgba(0, 0, 0, 0.267) 0%,
-      #4c438296 100%
-    ),
+  background: radial-gradient(rgba(0, 0, 0, 0.267) 0%, #4c438296 100%),
     url(../src/assets/bg.jpg), center/cover no-repeat;
-  overflow: hidden;
+  
 }
 
-
+.flex-center {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+}
+.App {
+  padding: 2rem 4rem;
+  height: 100dvh;
+}

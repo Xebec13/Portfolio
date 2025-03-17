@@ -1,3 +1,12 @@
+@import url(https://fonts.googleapis.com/css?family=Reggae+One:regular);
+@import url(https://fonts.googleapis.com/css?family=PT+Sans:regular,italic,700,700italic);
+@import url(https://fonts.googleapis.com/css?family=Chewy:regular);
+:root {
+  --reggae-font: "Reggae One", serif;
+  --pt-font: "PT Sans", serif;
+  --chewy-font: "Chewy";
+}
+
 a {
   color: unset;
   text-decoration: none;
