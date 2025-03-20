@@ -2,37 +2,44 @@
   box-sizing: border-box;
   margin: 0;
   padding: 0;
-  font-family: var(--chewy-font);
+  font-family: var(--koho-font);
 }
 
 :root {
-  :root {
-    --byzantium: #70355d;
-    --violet-jtc: #642e58;
-    --murrey: #822851;
-    --amaranth-purple: #a0214a;
-    --crimson: #dc143d;
-    --claret: #941945;
-    --tyrian-purple: #701c49;
-    --violet-jtc-2: #4b1e4d;
-    --russian-violet: #3e1647;
-    --ultra-violet: #4c4382;
-  }
+  --ultra-violet: #4c4382ff;
+  --finn: #5e3973ff;
+  --byzantium: #702e64ff;
+  --claret: #941945ff;
+  --amaranth-purple: #a13253ff;
+  --china-rose: #ad4b61ff;
+  --wheat: #f5deb3ff;
 }
 
 body {
-  background: radial-gradient(rgba(0, 0, 0, 0.267) 0%, #4c438296 100%),
-    url(../src/assets/bg.jpg), center/cover no-repeat;
-  
+  background-color: #4c4382ff;
 }
 
-.flex-center {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  gap: 1rem;
+.gradient-bg::before {
+  position: absolute;
+  background: url("../src/assets/bg8.jpg") center;
+  content: "";
+  height: 100%;
+  width: 100%;
+  filter: blur(5px);
+  z-index: -1;
 }
+
 .App {
   padding: 2rem 4rem;
-  height: 100dvh;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(3, max-content);
+  gap: 0.5rem;
+}
+
+.test-card {
+  padding: 3%;
+
+  border-radius: 25px;
+  background: linear-gradient(145deg, #e4b6bb71, #ffd8df91);
 }

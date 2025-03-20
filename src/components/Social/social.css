@@ -1,0 +1,7 @@
+.social {
+  display: flex;
+  grid-row: 2 / span 2;
+}
+.social p {
+  font-size: 3rem;
+}
