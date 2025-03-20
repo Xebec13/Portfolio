@@ -16,7 +16,6 @@ const App = () => (
   <>
     <div className="gradient-bg">
       <SakuraPetals petalImage={petalImage} petalCount={50} />
-      <Nav />
       <main className="App">
         <Info />
         <AboutMe />

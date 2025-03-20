@@ -17,6 +17,7 @@
 
 body {
   background-color: #4c4382ff;
+  color: azure;
 }
 
 .gradient-bg::before {
@@ -30,10 +31,11 @@ body {
 }
 
 .App {
+  height: 100dvh;
   padding: 2rem 4rem;
   display: grid;
   grid-template-columns: repeat(4, 1fr);
-  grid-template-rows: repeat(3, max-content);
+  grid-template-rows: repeat(3, 1fr);
   gap: 0.5rem;
 }
 
@@ -41,5 +43,5 @@ body {
   padding: 3%;
 
   border-radius: 25px;
-  background: linear-gradient(145deg, #e4b6bb71, #ffd8df91);
+  background: linear-gradient(145deg, #e4b6bb71, #201c3154);
 }

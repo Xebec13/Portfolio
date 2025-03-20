@@ -1,7 +1,34 @@
 .social {
   display: flex;
-  grid-row: 2 / span 2;
+  flex-direction: column;
+  grid-row: 2/ span 2;
 }
-.social p {
-  font-size: 3rem;
+
+.container {
+  overflow: hidden;
+  position: relative;
+  width: 100%;
+}
+
+.icons {
+  display: inline-flex;
+  align-items: center;
+  gap: 2rem;
+  padding: 1rem;
+  animation: slideLeft 15s linear infinite;
+  width: max-content;
+}
+
+.icons p {
+  font-size: 2rem;
+  display: inline-flex;
+}
+
+@keyframes slideLeft {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(20%);
+  }
 }

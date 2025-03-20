@@ -1,6 +1,5 @@
 import "./info.css";
-import SakuraPetals from "../../containers/Background/SakuraPetals";
-import petalImage from "../../assets/petal.png";
+
 
 const LandingPageInfo = [
   {
@@ -12,8 +11,7 @@ const LandingPageInfo = [
 ];
 
 const Info = () => (
-  <section className="main-section test-card">
-    {/* <SakuraPetals petalImage={petalImage} petalCount={100} /> */}
+  <section className="main-section">
     {LandingPageInfo.map(({ name, title, description }, index) => (
       <div key={index} className="content">
         <h1>{name}</h1>
