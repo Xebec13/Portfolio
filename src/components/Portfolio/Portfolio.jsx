@@ -1,12 +1,17 @@
-import React from 'react'
-import './portfolio.css'
+import React from "react";
+import "./portfolio.css";
+
+import item1 from "../../assets/bg8.jpg";
 
 const Portfolio = () => {
   return (
-    <div className="portfolio test-card">
-        <h1>PORTFOLIO</h1>
-    </div>
-  )
-}
+    <section className="portfolio-container">
+      <div className="portfolio"></div>
+      <div className="portfolio"></div>
+      <div className="portfolio"></div>
+      <div className="portfolio"></div>
+    </section>
+  );
+};
 
-export default Portfolio
+export default Portfolio;

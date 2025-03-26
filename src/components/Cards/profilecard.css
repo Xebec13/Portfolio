@@ -1,0 +1,35 @@
+.card-container {
+  display: flex;
+  justify-content: center;
+  align-items: stretch;
+  gap: 1rem;
+}
+
+.card-container .profile-card:nth-child(1) {
+  background: linear-gradient(45deg, #e4b6bb71, #201c3154), var(--finn);
+}
+.card-container .profile-card:nth-child(2) {
+  background: linear-gradient(300deg, #e4b6bb71, #201c3154), var(--main-pink);
+}
+.card-container .profile-card:nth-child(3) {
+  background: linear-gradient(360deg, #e4b6bb71, #201c3154), var(--claret);
+}
+
+.profile-card {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  border-radius: 25px;
+  padding: clamp(1rem, 2vw, 2rem);
+  flex: 1 1 33%;
+}
+
+.profile-card img {
+  width: clamp(100px, 10vw, 120px); /* Scalable width */
+  height: clamp(100px, 10vw, 120px); /* Scalable height */
+  filter: drop-shadow(5px 5px 10px var(--main-pink));
+}
+
+.profile-text {
+  font-size: clamp(1rem, 1.5vw, 1.5rem);
+}

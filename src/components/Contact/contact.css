@@ -1,4 +1,42 @@
-.contact {
-  grid-column: 4;
+.footer {
+  padding: clamp(1rem, 2vw, 2rem);
+  background: var(--ultra-violet);
+  border-radius: 25px;
 }
 
+.footer-info {
+  display: flex;
+  justify-content: space-between;
+  gap: .5rem;
+}
+.footer-info h1 {
+  font-size: clamp(2.5rem, 5vw, 5rem);
+}
+.footer-info p,
+.contact-item p {
+  font-size: clamp(1rem, 2vw, 1.5rem);
+}
+.footer-logo {
+  width: clamp(6rem, 12vw, 14rem);
+}
+.footer-logo img {
+  object-fit: cover;
+  width: 100%;
+  min-width: 100px;
+  min-height: 100px;
+  height: 100%;
+}
+
+.footer-contact > * {
+  margin: 10px 0;
+}
+
+.contact-item {
+  border-radius: 25px;
+  background: var(--main-pink);
+  padding: 1rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 0.5rem;
+}

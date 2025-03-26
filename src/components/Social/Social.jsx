@@ -1,74 +1,26 @@
 import React from "react";
 import "./social.css";
 
-import { FaJsSquare } from "react-icons/fa";
-import { MdOutlineHtml } from "react-icons/md";
-import { SiCsswizardry } from "react-icons/si";
-import { BiLogoPython } from "react-icons/bi";
+const SocialInfo = [
+  {
+    slogan: "Your Vision, My Creation",
+    description:
+      "See how your vision can be transformed into stunning digital creations through my portfolio.",
+  },
+];
 
-const Social = () => {
-  return (
-    <div className="social test-card">
-      <div className="container">
-        <h4>I know:</h4>
-        <div className="icons">
-          <p>
-            <MdOutlineHtml />
-          </p>
-          <p>
-            <SiCsswizardry />
-          </p>
-          <p>
-            <FaJsSquare />
-          </p>
-          <p>
-            <BiLogoPython />
-          </p>
-          <p>
-            <MdOutlineHtml />
-          </p>
-          <p>
-            <SiCsswizardry />
-          </p>
-          <p>
-            <FaJsSquare />
-          </p>
-          <p>
-            <BiLogoPython />
-          </p>
-        </div>
+const Social = () => (
+  <section className="social-container">
+    {SocialInfo.map(({ slogan, description }, index) => (
+      <div key={index} className="social-card">
+        <h1>{slogan}</h1>
+        <p>{description}</p>
       </div>
-      <div className="container">
-        <h4>I use:</h4>
-        <div className="icons">
-          <p>
-            <MdOutlineHtml />
-          </p>
-          <p>
-            <SiCsswizardry />
-          </p>
-          <p>
-            <FaJsSquare />
-          </p>
-          <p>
-            <BiLogoPython />
-          </p>
-          <p>
-            <MdOutlineHtml />
-          </p>
-          <p>
-            <SiCsswizardry />
-          </p>
-          <p>
-            <FaJsSquare />
-          </p>
-          <p>
-            <BiLogoPython />
-          </p>
-        </div>
-      </div>
+    ))}
+    <div className="social-animated-card">
+      GOWNO
     </div>
-  );
-};
+  </section>
+);
 
 export default Social;

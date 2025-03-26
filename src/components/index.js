@@ -6,6 +6,7 @@ import Social from './Social/Social'
 import Contact from './Contact/Contact'
 import ProfileCard from './Cards/ProfileCard'
 import LogoCard from './Cards/LogoCard'
+import AboutMeCard from './Cards/AboutMeCard'
 
 
 
@@ -18,4 +19,5 @@ export {
     Contact,
     ProfileCard,
     LogoCard,
+    AboutMeCard
 }

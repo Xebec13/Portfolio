@@ -1,0 +1,57 @@
+.aboutme-card {
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  padding: clamp(1rem, 2vw, 2rem);
+  border-radius: 25px;
+  font-size: clamp(1rem, 2.5vw, 3rem);
+}
+
+.aboutme-card:nth-child(3) {
+  background: var(--finn);
+}
+
+.aboutme-card:nth-child(4) {
+  background: var(--main-pink);
+}
+
+.aboutme-card:nth-child(5) {
+  background: var(--claret);
+}
+
+.aboutme-card h3 {
+  text-align: center;
+  font-size: clamp(1.5rem, 2vw, 2.5rem);
+}
+
+.scroll-container {
+  width: 100%;
+  overflow: hidden;
+  position: relative;
+}
+
+.scroll-content {
+  display: flex;
+  gap: 1.5rem;
+  will-change: transform;
+  animation: scrolling 20s linear infinite;
+}
+
+@keyframes scrolling {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-100%);
+  }
+}
+
+.group {
+  display: flex;
+  gap: 1rem;
+}
+
+.scroll-content:hover {
+  animation-play-state: paused;
+}

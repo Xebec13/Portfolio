@@ -1,4 +1,3 @@
-import React, { useState } from "react";
 import "./nav.css";
 
 const NavItems = [
@@ -10,12 +9,12 @@ const NavItems = [
 
 const Nav = () => (
   <header>
-    {NavItems.map(({text,href},index)=> (
-      <nav key={index}>
-        <ul>
-          <li><a href={href}>{text}</a></li>
-        </ul>
-      </nav>
+    {NavItems.map(({ text, href }, index) => (
+      <ul className="nav" key={index}>
+        <li>
+          <a href={href}>{text}</a>
+        </li>
+      </ul>
     ))}
   </header>
 );

@@ -9,39 +9,23 @@
   --ultra-violet: #4c4382ff;
   --finn: #5e3973ff;
   --byzantium: #702e64ff;
-  --claret: #941945ff;
+  --claret: rgb(148, 25, 68);
   --amaranth-purple: #a13253ff;
   --china-rose: #ad4b61ff;
   --wheat: #f5deb3ff;
+  --main-pink: #b36a95;
+  --font-azure: azure;
 }
 
 body {
-  background-color: #4c4382ff;
-  color: azure;
-}
-
-.gradient-bg::before {
-  position: absolute;
-  background: url("../src/assets/bg8.jpg") center;
-  content: "";
-  height: 100%;
-  width: 100%;
-  filter: blur(5px);
-  z-index: -1;
+  background: linear-gradient(45deg, #e4b6bb71, #201c3154), #d899c8b7;
+  color: var(--font-azure);
 }
 
 .App {
-  height: 100dvh;
-  padding: 2rem 4rem;
-  display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  grid-template-rows: repeat(3, 1fr);
-  gap: 0.5rem;
+  padding: clamp(1rem, 1vw, 1.5rem) clamp(1.5rem, 3vw, 3rem);
 }
 
-.test-card {
-  padding: 3%;
-
-  border-radius: 25px;
-  background: linear-gradient(145deg, #e4b6bb71, #201c3154);
+section {
+  margin: 20px 0;
 }

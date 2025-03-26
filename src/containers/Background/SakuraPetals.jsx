@@ -1,6 +1,7 @@
 import React, { useEffect, useRef } from 'react';
 import './sakurapetals.css';
 
+
 const SakuraPetals = ({ petalImage, petalCount = 30 }) => {
   const containerRef = useRef(null);
 

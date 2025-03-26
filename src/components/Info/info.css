@@ -1,21 +1,21 @@
-.main-section {
-  grid-column: 1 / span 3;
-  color: azure;
-  padding: 2%;
-}
-
-
 .content {
-  text-align: right;
+  text-align: center;
+  text-wrap: nowrap;
   display: flex;
-  flex-direction: column;
-  justify-content: flex-end;
+  justify-content: center;
+  align-items: center;
+  gap: .5rem;
 }
 
-h1 {
-  font-size: 4.5rem;
+.content p {
+  font-size: clamp(2rem, 8vw, 10rem);
+  font-weight: 700;
 }
 
-p {
-  font-size: 1.75rem;
+.content p:nth-child(1) {
+  color: var(--ultra-violet);
 }
+
+/* .content p:nth-child(1) {
+  
+} */
